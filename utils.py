@@ -2,7 +2,12 @@ from models import Clientes, Ensaio, Usuarios
 
 
 def insere_cliente():
-    cliente = Clientes(nome='Ariane', sobrenome='Padua', email='ariane.padua@gmail.com', telefone='11959527541')
+    cliente = Clientes(
+                        nome='Ariane',
+                        sobrenome='Padua',
+                        email='ariane.padua@gmail.com',
+                        telefone='11959527541'
+                        )
     print(cliente)
     cliente.save()
 
